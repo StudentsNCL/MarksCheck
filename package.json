@@ -1,0 +1,18 @@
+{
+  "name": "MarksCheck",
+  "version": "0.0.0",
+  "description": "Check for module mark changes",
+  "main": "marksCheck.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "node-gcm": "^0.9.15",
+    "node-slack": "0.0.7",
+    "nodemailer": "^1.3.4",
+    "request": "^2.58.0"
+  }
+}

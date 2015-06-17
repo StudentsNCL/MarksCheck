@@ -1,0 +1,15 @@
+{
+    "student_no": "123456789",
+    "sechash": "abcd1234abcd1234abcd1234abcd1234",
+    "stage": 3,
+    "stage_1_year": 2012,
+    "delay": 10,
+    "notifications": {
+        "email": "",
+        "server_email": "markscheck@localhost",
+        "gcm_key": "",
+        "gcm_regid": "",
+        "slack_url": "",
+        "slack_user": "@username"
+    }
+}
