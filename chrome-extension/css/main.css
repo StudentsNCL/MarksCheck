@@ -1,0 +1,14 @@
+body {
+	min-width:500px;
+	padding: 20px;
+}
+
+.output {
+	height: 200px;
+	width: 460px;
+	overflow: scroll;
+}
+
+#output {
+	width: 10000px;
+}

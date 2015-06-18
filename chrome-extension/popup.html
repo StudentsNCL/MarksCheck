@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Marks Checker</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script src="popup.js"></script>
+</head>
+<body>
+  <h1>Marks Checker</h1>
+  <p>Periodically check for module mark changes.</p>
+  <form class="clearfix">
+    <h2>Config</h2>
+    <div class="well clearfix">
+      <div class="form-group col-xs-12">
+        <div class="col-xs-4">
+          <label>User Id</label>
+          <input class="form-control" type="text" id="student_no" placeholder="123456789" />
+        </div>
+        <div class="col-xs-4">
+          <label>Year started</label>
+          <input class="form-control" type="number" id="stage_1_year" placeholder="2012" />
+        </div>
+        <div class="col-xs-4">
+          <label>Stage</label>
+          <input class="form-control" type="number" id="stage" placeholder="3" />
+        </div>
+      </div>
+      <div class="form-group col-xs-12">
+        <label>Sechash</label>
+          <p class="help-block">Find this by going to s3p.ncl.ac.uk and viewing the iframe URL in "Component Marks" section.</p>
+        <input class="form-control" type="text" id="sechash" placeholder="abcd1234abcd1234abcd1234abcd1234" />
+      </div>
+    </div>
+    <h2>Notifications (optional)</h2>
+    <div class="well clearfix">
+      <p class="help-block">You will receive a notification in chrome by default.</p>
+      <div class="form-group col-xs-12">
+        <label>Email</label>
+        <input class="form-control" type="email" id="email" placeholder="email@example.com" />
+      </div>
+      <div class="form-group col-xs-12">
+        <div class="col-xs-5">
+          <label>Slack User</label>
+          <input class="form-control" type="text" id="slack_user" placeholder="@username" />
+        </div>
+        <div class="col-xs-7">
+          <label>Slack Webhook URL</label>
+          <input class="form-control" type="text" id="slack_url" placeholder="https://hooks.slack.com/services/aaa/bbb/ccc" />
+        </div>
+      </div>
+    </div>
+    <div class="form-group col-xs-12">
+      <div class="col-xs-6">
+        <label class="col-xs-6">Delay (minutes)</label>
+        <div class="col-xs-6">
+          <input class="form-control" type="number" id="delay" value="5" placeholder="5" />
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <input type="button" class="btn btn-primary col-xs-12" id="toggle" value="Start" />
+      </div>
+    </div>
+  </form>
+  <h2>Output</h2>
+    <pre class="output">
+      <div id="output">Marks Checker Loaded</div>
+    </pre>
+</body>
+</html>
